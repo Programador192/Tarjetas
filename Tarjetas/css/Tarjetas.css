@@ -1,0 +1,83 @@
+/*Propiedades generales*/
+html {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    padding: 0;
+    border: 0;
+    margin: 0;
+    font-size: 19px;
+}
+
+/*Cabezera*/
+
+header {
+    background-color: black;
+    padding: 10px;
+}
+
+header h1 {
+    color: white;
+    text-align: center;
+}
+
+/*Contenedor de la tarjetas*/
+.Contenedor {
+    display: flex;
+    align-items: stretch;
+    gap: 10px;
+}
+
+.carta-1, .carta-2, .carta-3, .carta-4 {
+ width: 30%;
+ padding: 10px;
+ border: 1px solid black;
+ margin: 5px;
+ min-height: 400px;
+ display: flex;
+ flex-direction: column;
+ justify-content: space-between;
+}
+
+.carta-1 h2, .carta-2 h2, .carta-3 h2, .carta-4 h2 {
+    text-align: center;
+}
+
+.carta-1 img, .carta-2 img, .carta-3 img, .carta-4 h2 {
+    max-width: 100%;
+    height: auto;
+}
+
+.carta-1 p, .carta-2 p, .carta-3 p, .carta-4 p {
+    text-align: center;
+    font-size: 18px;
+}
+
+/*Decoracion*/
+
+header h1:hover {
+    color: red;
+    text-decoration: underline;
+    text-underline-offset: 12px;
+    transition: color 1s ease;
+    cursor: pointer;
+}
+
+.carta-1:hover, .carta-2:hover, .carta-3:hover, .carta-4:hover {
+    border: 3px solid blue;
+    transition: border 1s ease;
+    cursor: pointer;
+}
+
+.carta-1 h2:hover, .carta-2 h2:hover, .carta-3 h2:hover, .carta-4 h2:hover {
+    color: green;
+    text-decoration: underline;
+    text-underline-offset: 5px;
+    transition: color 1s ease;
+}
+
+.carta-1 p:hover, .carta-2 p:hover, .carta-3 p:hover, .carta-4 p:hover {
+    color: blueviolet;
+    transition: color 1s ease;
+}
